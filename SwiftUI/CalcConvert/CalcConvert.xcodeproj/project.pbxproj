@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C93E6E84286AA7010001A8DA /* LabelResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93E6E83286AA7010001A8DA /* LabelResultView.swift */; };
+		C93E6E87286AB2E60001A8DA /* UIKLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93E6E86286AB2E60001A8DA /* UIKLabel.swift */; };
+		C93E6E8A286ACE520001A8DA /* MainGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93E6E89286ACE520001A8DA /* MainGroupView.swift */; };
+		C93E6E8C286ACE740001A8DA /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93E6E8B286ACE740001A8DA /* Const.swift */; };
+		C93E6E8F286ACFC20001A8DA /* MainRoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93E6E8E286ACFC20001A8DA /* MainRoundView.swift */; };
 		C950EA0F286999E700DA2622 /* CalcConvertApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C950EA0E286999E700DA2622 /* CalcConvertApp.swift */; };
 		C950EA11286999E700DA2622 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C950EA10286999E700DA2622 /* ContentView.swift */; };
 		C950EA13286999E800DA2622 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C950EA12286999E800DA2622 /* Assets.xcassets */; };
@@ -29,6 +34,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C93E6E83286AA7010001A8DA /* LabelResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelResultView.swift; sourceTree = "<group>"; };
+		C93E6E86286AB2E60001A8DA /* UIKLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKLabel.swift; sourceTree = "<group>"; };
+		C93E6E89286ACE520001A8DA /* MainGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGroupView.swift; sourceTree = "<group>"; };
+		C93E6E8B286ACE740001A8DA /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		C93E6E8E286ACFC20001A8DA /* MainRoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRoundView.swift; sourceTree = "<group>"; };
 		C950EA0B286999E700DA2622 /* CalcConvert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalcConvert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C950EA0E286999E700DA2622 /* CalcConvertApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcConvertApp.swift; sourceTree = "<group>"; };
 		C950EA10286999E700DA2622 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +72,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C93E6E81286AA6E40001A8DA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C93E6E82286AA6EB0001A8DA /* Form */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C93E6E82286AA6EB0001A8DA /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				C93E6E83286AA7010001A8DA /* LabelResultView.swift */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		C93E6E85286AB2D50001A8DA /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				C93E6E86286AB2E60001A8DA /* UIKLabel.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		C93E6E88286ACDD50001A8DA /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				C93E6E89286ACE520001A8DA /* MainGroupView.swift */,
+				C93E6E8E286ACFC20001A8DA /* MainRoundView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
 		C950EA02286999E700DA2622 = {
 			isa = PBXGroup;
 			children = (
@@ -102,8 +145,10 @@
 		C950EA1C28699AAC00DA2622 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				C93E6E85286AB2D50001A8DA /* Custom */,
 				C950EA1F28699B1000DA2622 /* Extensions */,
 				C950EA1E28699ABD00DA2622 /* Managers */,
+				C93E6E8B286ACE740001A8DA /* Const.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -111,6 +156,7 @@
 		C950EA1D28699AB900DA2622 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				C93E6E81286AA6E40001A8DA /* Common */,
 				C950EA2928699D1D00DA2622 /* Setting */,
 				C950EA2628699D0C00DA2622 /* Main */,
 				C950EA2528699CFE00DA2622 /* Calculator */,
@@ -163,6 +209,7 @@
 		C950EA2628699D0C00DA2622 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				C93E6E88286ACDD50001A8DA /* SubViews */,
 				C950EA2728699D1900DA2622 /* MainView.swift */,
 			);
 			path = Main;
@@ -334,11 +381,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C93E6E87286AB2E60001A8DA /* UIKLabel.swift in Sources */,
 				C950EA3A2869A3D800DA2622 /* FuelMileageView.swift in Sources */,
 				C950EA402869A3F400DA2622 /* TipView.swift in Sources */,
 				C950EA11286999E700DA2622 /* ContentView.swift in Sources */,
 				C950EA342869A36500DA2622 /* ExchangeView.swift in Sources */,
+				C93E6E84286AA7010001A8DA /* LabelResultView.swift in Sources */,
 				C950EA432869A42300DA2622 /* OvulationView.swift in Sources */,
+				C93E6E8A286ACE520001A8DA /* MainGroupView.swift in Sources */,
 				C950EA2328699BC200DA2622 /* UtilManager.swift in Sources */,
 				C950EA0F286999E700DA2622 /* CalcConvertApp.swift in Sources */,
 				C950EA492869A44500DA2622 /* LunarView.swift in Sources */,
@@ -349,8 +399,10 @@
 				C950EA462869A43700DA2622 /* PercentView.swift in Sources */,
 				C950EA2828699D1900DA2622 /* MainView.swift in Sources */,
 				C950EA2128699B1E00DA2622 /* Color.swift in Sources */,
+				C93E6E8F286ACFC20001A8DA /* MainRoundView.swift in Sources */,
 				C950EA302869A35300DA2622 /* UnitView.swift in Sources */,
 				C950EA4C2869A45100DA2622 /* DateView.swift in Sources */,
+				C93E6E8C286ACE740001A8DA /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
