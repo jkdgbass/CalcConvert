@@ -10,6 +10,17 @@ import SwiftUI
 struct MainView: View {
     var body: some View {
         VStack {
+            HStack {
+                Spacer()
+                
+                Button {
+                    print("setting")
+                } label: {
+                    Image("ico_settingBtn")
+                }
+            }
+            
+            
             MainConvertGroupView()
                 .padding(.horizontal, 16)
             
