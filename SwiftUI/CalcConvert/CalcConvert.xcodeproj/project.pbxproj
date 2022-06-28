@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		C93E6E84286AA7010001A8DA /* LabelResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93E6E83286AA7010001A8DA /* LabelResultView.swift */; };
 		C93E6E87286AB2E60001A8DA /* UIKLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93E6E86286AB2E60001A8DA /* UIKLabel.swift */; };
-		C93E6E8A286ACE520001A8DA /* MainGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93E6E89286ACE520001A8DA /* MainGroupView.swift */; };
 		C93E6E8C286ACE740001A8DA /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93E6E8B286ACE740001A8DA /* Const.swift */; };
-		C93E6E8F286ACFC20001A8DA /* MainRoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93E6E8E286ACFC20001A8DA /* MainRoundView.swift */; };
+		C93E6E91286AFFBB0001A8DA /* MainConvertGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93E6E90286AFFBB0001A8DA /* MainConvertGroupView.swift */; };
+		C93E6E93286B06FA0001A8DA /* MainCalcGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93E6E92286B06FA0001A8DA /* MainCalcGroupView.swift */; };
 		C950EA0F286999E700DA2622 /* CalcConvertApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C950EA0E286999E700DA2622 /* CalcConvertApp.swift */; };
 		C950EA11286999E700DA2622 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C950EA10286999E700DA2622 /* ContentView.swift */; };
 		C950EA13286999E800DA2622 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C950EA12286999E800DA2622 /* Assets.xcassets */; };
@@ -36,9 +36,9 @@
 /* Begin PBXFileReference section */
 		C93E6E83286AA7010001A8DA /* LabelResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelResultView.swift; sourceTree = "<group>"; };
 		C93E6E86286AB2E60001A8DA /* UIKLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKLabel.swift; sourceTree = "<group>"; };
-		C93E6E89286ACE520001A8DA /* MainGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGroupView.swift; sourceTree = "<group>"; };
 		C93E6E8B286ACE740001A8DA /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
-		C93E6E8E286ACFC20001A8DA /* MainRoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRoundView.swift; sourceTree = "<group>"; };
+		C93E6E90286AFFBB0001A8DA /* MainConvertGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainConvertGroupView.swift; sourceTree = "<group>"; };
+		C93E6E92286B06FA0001A8DA /* MainCalcGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCalcGroupView.swift; sourceTree = "<group>"; };
 		C950EA0B286999E700DA2622 /* CalcConvert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalcConvert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C950EA0E286999E700DA2622 /* CalcConvertApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcConvertApp.swift; sourceTree = "<group>"; };
 		C950EA10286999E700DA2622 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,8 +99,8 @@
 		C93E6E88286ACDD50001A8DA /* SubViews */ = {
 			isa = PBXGroup;
 			children = (
-				C93E6E89286ACE520001A8DA /* MainGroupView.swift */,
-				C93E6E8E286ACFC20001A8DA /* MainRoundView.swift */,
+				C93E6E90286AFFBB0001A8DA /* MainConvertGroupView.swift */,
+				C93E6E92286B06FA0001A8DA /* MainCalcGroupView.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -388,18 +388,18 @@
 				C950EA342869A36500DA2622 /* ExchangeView.swift in Sources */,
 				C93E6E84286AA7010001A8DA /* LabelResultView.swift in Sources */,
 				C950EA432869A42300DA2622 /* OvulationView.swift in Sources */,
-				C93E6E8A286ACE520001A8DA /* MainGroupView.swift in Sources */,
 				C950EA2328699BC200DA2622 /* UtilManager.swift in Sources */,
 				C950EA0F286999E700DA2622 /* CalcConvertApp.swift in Sources */,
 				C950EA492869A44500DA2622 /* LunarView.swift in Sources */,
 				C950EA372869A3C400DA2622 /* FuelView.swift in Sources */,
+				C93E6E91286AFFBB0001A8DA /* MainConvertGroupView.swift in Sources */,
+				C93E6E93286B06FA0001A8DA /* MainCalcGroupView.swift in Sources */,
 				C950EA322869A35B00DA2622 /* TimeView.swift in Sources */,
 				C950EA2B2869A32700DA2622 /* SettingView.swift in Sources */,
 				C950EA3D2869A3E900DA2622 /* GradeView.swift in Sources */,
 				C950EA462869A43700DA2622 /* PercentView.swift in Sources */,
 				C950EA2828699D1900DA2622 /* MainView.swift in Sources */,
 				C950EA2128699B1E00DA2622 /* Color.swift in Sources */,
-				C93E6E8F286ACFC20001A8DA /* MainRoundView.swift in Sources */,
 				C950EA302869A35300DA2622 /* UnitView.swift in Sources */,
 				C950EA4C2869A45100DA2622 /* DateView.swift in Sources */,
 				C93E6E8C286ACE740001A8DA /* Const.swift in Sources */,
