@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MainView: View {
     var body: some View {
-        VStack {
+        VStack(alignment: .leading, spacing: 0, content: {
             HStack {
                 Spacer()
                 
@@ -20,12 +20,20 @@ struct MainView: View {
                 }
             }
             
+            Text("계산기")
+                .foregroundColor(.gray900)
+                .font(.system(size: 34, weight: .medium))
+                .padding(.horizontal, 16)
+                .padding(.bottom, 24)
             
             MainConvertGroupView()
                 .padding(.horizontal, 16)
+                .padding(.bottom, 48)
             
+            MainCalcGroupView()
+                .padding(.horizontal, 16)
             Spacer()
-        }
+        })
     }
 }
 

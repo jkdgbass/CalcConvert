@@ -10,6 +10,7 @@ import SwiftUI
 struct MainCalcGroupView: View {
     
     private var type: GroupType = .calculate
+    private var currentIndex: Int = 0
     
     var body: some View {
         VStack(alignment: .leading, spacing: 6, content: {
@@ -18,37 +19,44 @@ struct MainCalcGroupView: View {
                 .font(.system(size: 13, weight: .medium))
             
             VStack(alignment: .leading, spacing: 30, content: {
-                
+                ForEach(0..<(type.menus.count / 4) + 1) { index in
+                    HStack(alignment: .center, spacing: 34, content: {
+                        
+                        ForEach(0..<4) { index in
+                            makeButton()
+                        }
+                    })
+                    .frame(maxWidth: .infinity)
+                }
             })
             .padding(.top, 24)
             .padding(.bottom, 30)
-            .padding(.leading, 31)
             .background(RoundedRectangle(cornerRadius: 12)
                 .foregroundColor(.bgElevated)
                 .shadow(color: .black.opacity(0.16), radius: 8, x: 0, y: 8)
             )
             
-            HStack(alignment: .center, spacing: 34, content: {
-                
-                ForEach(type.menus, id: \.self) { menu in
-                    Button {
-                        print("menu Touch")
-                    } label: {
-                        VStack(alignment: .center, spacing: 6, content: {
-                            Image(menu.imageName)
-                            
-                            Text(menu.iconName)
-                                .foregroundColor(.gray900)
-                                .font(.system(size: 13, weight: .regular))
-                        })
-                    }
-
-                }
-
-                Spacer()
-            })
-            
         })
+    }
+    
+    private func makeButton() -> some View {
+        
+        let menu = type.menus[currentIndex]
+        let returnBtn = Button(action: {
+            print("menuTouch index =", currentIndex)
+        }, label: {
+            VStack(alignment: .center, spacing: 6, content: {
+                Image(menu.imageName)
+                
+                Text(menu.iconName)
+                    .foregroundColor(.gray900)
+                    .font(.system(size: 13, weight: .regular))
+            })
+        })
+            .frame(maxWidth: .infinity)
+        
+            currentIndex = currentIndex + 1
+        return returnBtn
     }
 }
 
