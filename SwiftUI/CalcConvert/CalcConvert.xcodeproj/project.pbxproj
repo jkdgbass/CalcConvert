@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		523F4B6E28A0B75A00F63603 /* SettingRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F4B6D28A0B75A00F63603 /* SettingRowView.swift */; };
+		523F4B7728A0C27500F63603 /* SettingGroupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F4B7628A0C27500F63603 /* SettingGroupViewModel.swift */; };
+		523F4B7B28A0C4C300F63603 /* SettingGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F4B7A28A0C4C300F63603 /* SettingGroupView.swift */; };
+		52ADB90628A285DA0024FEC2 /* SelectForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ADB90528A285DA0024FEC2 /* SelectForm.swift */; };
+		52ADB90828A2A9010024FEC2 /* ResultForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ADB90728A2A9010024FEC2 /* ResultForm.swift */; };
+		52B65DA528A208F5005FA3DE /* BasicNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B65DA428A208F5005FA3DE /* BasicNavigationView.swift */; };
+		52B65DA728A20C40005FA3DE /* SwayFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B65DA628A20C40005FA3DE /* SwayFormView.swift */; };
+		52B65DAA28A213B4005FA3DE /* LunarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B65DA928A213B4005FA3DE /* LunarModel.swift */; };
 		C93E6E84286AA7010001A8DA /* LabelResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93E6E83286AA7010001A8DA /* LabelResultView.swift */; };
 		C93E6E87286AB2E60001A8DA /* UIKLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93E6E86286AB2E60001A8DA /* UIKLabel.swift */; };
 		C93E6E8C286ACE740001A8DA /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93E6E8B286ACE740001A8DA /* Const.swift */; };
@@ -34,6 +42,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		523F4B6D28A0B75A00F63603 /* SettingRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingRowView.swift; sourceTree = "<group>"; };
+		523F4B7628A0C27500F63603 /* SettingGroupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingGroupViewModel.swift; sourceTree = "<group>"; };
+		523F4B7A28A0C4C300F63603 /* SettingGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingGroupView.swift; sourceTree = "<group>"; };
+		52ADB90528A285DA0024FEC2 /* SelectForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectForm.swift; sourceTree = "<group>"; };
+		52ADB90728A2A9010024FEC2 /* ResultForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultForm.swift; sourceTree = "<group>"; };
+		52B65DA428A208F5005FA3DE /* BasicNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicNavigationView.swift; sourceTree = "<group>"; };
+		52B65DA628A20C40005FA3DE /* SwayFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwayFormView.swift; sourceTree = "<group>"; };
+		52B65DA928A213B4005FA3DE /* LunarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunarModel.swift; sourceTree = "<group>"; };
 		C93E6E83286AA7010001A8DA /* LabelResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelResultView.swift; sourceTree = "<group>"; };
 		C93E6E86286AB2E60001A8DA /* UIKLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKLabel.swift; sourceTree = "<group>"; };
 		C93E6E8B286ACE740001A8DA /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
@@ -72,6 +88,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		523F4B6A28A0B5EE00F63603 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				523F4B6D28A0B75A00F63603 /* SettingRowView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		523F4B6F28A0C0DA00F63603 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				523F4B7628A0C27500F63603 /* SettingGroupViewModel.swift */,
+				523F4B7A28A0C4C300F63603 /* SettingGroupView.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52B65DA128A208D2005FA3DE /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				52B65DA428A208F5005FA3DE /* BasicNavigationView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		52B65DA828A213A1005FA3DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52B65DA928A213B4005FA3DE /* LunarModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		C93E6E81286AA6E40001A8DA /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +133,9 @@
 			isa = PBXGroup;
 			children = (
 				C93E6E83286AA7010001A8DA /* LabelResultView.swift */,
+				52B65DA628A20C40005FA3DE /* SwayFormView.swift */,
+				52ADB90528A285DA0024FEC2 /* SelectForm.swift */,
+				52ADB90728A2A9010024FEC2 /* ResultForm.swift */,
 			);
 			path = Form;
 			sourceTree = "<group>";
@@ -91,6 +143,7 @@
 		C93E6E85286AB2D50001A8DA /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				52B65DA128A208D2005FA3DE /* Navigation */,
 				C93E6E86286AB2E60001A8DA /* UIKLabel.swift */,
 			);
 			path = Custom;
@@ -218,6 +271,8 @@
 		C950EA2928699D1D00DA2622 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				523F4B6F28A0C0DA00F63603 /* Model */,
+				523F4B6A28A0B5EE00F63603 /* SubViews */,
 				C950EA2A2869A32700DA2622 /* SettingView.swift */,
 			);
 			path = Setting;
@@ -298,6 +353,7 @@
 		C950EA472869A43C00DA2622 /* Lunar */ = {
 			isa = PBXGroup;
 			children = (
+				52B65DA828A213A1005FA3DE /* Model */,
 				C950EA482869A44500DA2622 /* LunarView.swift */,
 			);
 			path = Lunar;
@@ -381,18 +437,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52ADB90828A2A9010024FEC2 /* ResultForm.swift in Sources */,
 				C93E6E87286AB2E60001A8DA /* UIKLabel.swift in Sources */,
 				C950EA3A2869A3D800DA2622 /* FuelMileageView.swift in Sources */,
+				52B65DAA28A213B4005FA3DE /* LunarModel.swift in Sources */,
 				C950EA402869A3F400DA2622 /* TipView.swift in Sources */,
 				C950EA11286999E700DA2622 /* ContentView.swift in Sources */,
 				C950EA342869A36500DA2622 /* ExchangeView.swift in Sources */,
 				C93E6E84286AA7010001A8DA /* LabelResultView.swift in Sources */,
 				C950EA432869A42300DA2622 /* OvulationView.swift in Sources */,
 				C950EA2328699BC200DA2622 /* UtilManager.swift in Sources */,
+				523F4B6E28A0B75A00F63603 /* SettingRowView.swift in Sources */,
 				C950EA0F286999E700DA2622 /* CalcConvertApp.swift in Sources */,
 				C950EA492869A44500DA2622 /* LunarView.swift in Sources */,
 				C950EA372869A3C400DA2622 /* FuelView.swift in Sources */,
 				C93E6E91286AFFBB0001A8DA /* MainConvertGroupView.swift in Sources */,
+				52B65DA528A208F5005FA3DE /* BasicNavigationView.swift in Sources */,
+				523F4B7728A0C27500F63603 /* SettingGroupViewModel.swift in Sources */,
+				523F4B7B28A0C4C300F63603 /* SettingGroupView.swift in Sources */,
+				52ADB90628A285DA0024FEC2 /* SelectForm.swift in Sources */,
 				C93E6E93286B06FA0001A8DA /* MainCalcGroupView.swift in Sources */,
 				C950EA322869A35B00DA2622 /* TimeView.swift in Sources */,
 				C950EA2B2869A32700DA2622 /* SettingView.swift in Sources */,
@@ -401,6 +464,7 @@
 				C950EA2828699D1900DA2622 /* MainView.swift in Sources */,
 				C950EA2128699B1E00DA2622 /* Color.swift in Sources */,
 				C950EA302869A35300DA2622 /* UnitView.swift in Sources */,
+				52B65DA728A20C40005FA3DE /* SwayFormView.swift in Sources */,
 				C950EA4C2869A45100DA2622 /* DateView.swift in Sources */,
 				C93E6E8C286ACE740001A8DA /* Const.swift in Sources */,
 			);
